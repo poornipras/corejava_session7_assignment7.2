@@ -1,0 +1,28 @@
+Write a program to find a substring in a String by using an inbuilt method of String class.
+
+package session7;
+
+public class conversion 
+{
+public static void main(String[] args)
+{
+	String s1="Hello";
+	String S2="Hello";
+	
+	String s3="He";
+	String s4="he";
+	
+	String s5=s1.substring(0,2);	
+
+	System.out.println("string obtained from s1 by using substring() of string class: "+s5);
+	System.out.println("Comparing string s5="+s5+ "  and s3="+s3+":" +s5.equals(s3));
+	System.out.println("--------------------------------------------");
+	System.out.println("Using conatins() of string class to find a set of charcters in the string:");
+	boolean find=s1.contains(s3);
+	System.out.println("Does the string " +s1+ " contain chracters "+ s3+":  " +find);
+	
+	boolean findanother=s1.contains(s4);
+	System.out.println("Does the string "+s1+" contains the chracters "+s4+": "+findanother);
+	
+}
+}
